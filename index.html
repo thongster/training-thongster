@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- bootstrap baby -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- our own css -->
+        <link href="styles.css" rel="stylesheet">
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/308/308911.png">
+
+        <title>Training Thongster</title>
+    </head>
+    <body>
+        <div class="topbar container">
+            <header>
+                <nav class="navbar navbar-expand">
+                    <div class="navbar-nav container-sm">
+                        <h1>
+                            Training Thongster
+                        </h1>
+                        <ul class="mainnav navbar-nav">
+                            <li class="nav-item">
+                                <button class="btn btn-outline-dark">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-outline-dark">
+                                    <a class="nav-link" href="/strengthtraining.html">Strength Training</a>
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-outline-dark">
+                                    <a class="nav-link" href="/bodybuilding.html">Bodybuilding</a>
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-outline-dark">
+                                    <a class="nav-link" href="/cardio.html">Cardio</a>
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-outline-dark">
+                                    <a class="nav-link" href="/diet.html">Diet</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <div class="banner container">
+            <img src="https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" class="img-fluid"/>
+        </div>
+
+        <main>
+            <div class ="introduction container">
+                <p>
+                    The <b>Training of Thongster</b> is my documented journey from a mediocre physique to that of a <b>Greek God</b>. Through consistent weight training, cardiovascular exercise, and a proper diet, the development of my very human body at the age of 26 will become the best it has ever been.
+                </p>
+                <p>
+                    Not only is it a physical journey, it arguable a more mental journey and a battle within my own mind. Breaking the chains of my old mindset about myself, through changing my body I am also changing my habitual thought patterns and how I view myself as a person. I'm practicing the discipline it takes to reform oneself physically. Although this is Training Thongster and this is very much about my physical activites, it is my mental thoughts and wavelengths which will be trained the most.
+                </p>
+                <p>
+                    I must first control the mental in order to change the physical. <um>My physical training and my body transformation is only a measure of how discplined I have become and who I am inside as a man.</u>
+                </p>
+            </div>
+
+            <div class="container quote">
+                <h4>Click to get my favourite quote</h4>
+
+                <button class="btn btn-outline-dark" onclick="newQuote()">
+                    Let's Get It!
+                </button>
+
+                <p id="response"></p>
+            </div>
+        </main>
+
+        <script>
+            // place at the end so script runs after document is loaded
+
+            // create an array with all of the string quotes
+            var quotes = [
+                "Come on. Get serious. - Arnold Schwarzenegger",
+                "The seas of the world part for the committed man. - David Payne",
+                "Happiness is like the castles from our childhood fairytales, they are all guarded by dragons. - Tristan Tate",
+                "The man who goes to the gym every single day regardless of how he feels will always beat the man who goes to the gym when he feels like going to the gym. - Andrew Tate",
+                "The greatest glory in living lies not in never falling, but in rising every time we fall. - Nelson Mandela",
+                "It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and timid souls who neither know victory nor defeat. - Theodore Roosevelt",
+                "As he thinks, so he is; as he continues to think, so he remains. - James Allen",
+                "Every adversity brings with it the seed of an equivalent advantage. - Napoleon Hill",
+                "Give me six hours to chop down a tree and I will spend the first four sharpening the axe. - Abraham Lincoln",
+            ]
+
+            // define a new function which generates a random number and prints into the innerHTML that random quote
+            function newQuote() {
+                var randomNumber = Math.floor(Math.random() * (quotes.length));
+                document.getElementById("response").innerHTML = quotes[randomNumber];
+            }
+
+        </script>
+    </body>
+</html>

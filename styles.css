@@ -1,0 +1,43 @@
+.navbar {
+    padding-top: 10px;
+    padding: 1em;
+}
+
+ul {
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    text-decoration: none;
+}
+
+.introduction {
+    padding: 1em;
+    text-align: center;
+    font-family: georgia;
+    font-size: 16px;
+    width: 94%;
+}
+
+.quote {
+    text-align: center;
+    font-family: georgia;
+    font-size: 16px;
+    width: 94%;
+}
+
+body {
+    padding-bottom: 1em;
+}
+
+#response {
+    padding: 1em;
+}
